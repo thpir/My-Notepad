@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>414</width>
+    <width>652</width>
     <height>381</height>
    </rect>
   </property>
@@ -25,7 +25,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>414</width>
+     <width>652</width>
      <height>22</height>
     </rect>
    </property>
@@ -38,6 +38,8 @@
     <addaction name="separator"/>
     <addaction name="actionSave"/>
     <addaction name="actionSave_as"/>
+    <addaction name="separator"/>
+    <addaction name="actionPrint"/>
    </widget>
    <widget class="QMenu" name="menuEdit">
     <property name="title">
@@ -49,6 +51,10 @@
     <addaction name="separator"/>
     <addaction name="actionRedo"/>
     <addaction name="actionUndo"/>
+    <addaction name="separator"/>
+    <addaction name="actionFont"/>
+    <addaction name="actionColor"/>
+    <addaction name="actionBackground_color"/>
    </widget>
    <widget class="QMenu" name="menuAbout">
     <property name="title">
@@ -56,8 +62,15 @@
     </property>
     <addaction name="actionAbout_Notepad"/>
    </widget>
+   <widget class="QMenu" name="menuPreferences">
+    <property name="title">
+     <string>Preferences</string>
+    </property>
+    <addaction name="actionBackground_theme"/>
+   </widget>
    <addaction name="menuFile"/>
    <addaction name="menuEdit"/>
+   <addaction name="menuPreferences"/>
    <addaction name="menuAbout"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
@@ -73,8 +86,10 @@
    </attribute>
    <addaction name="actionNew"/>
    <addaction name="actionOpen"/>
+   <addaction name="separator"/>
    <addaction name="actionSave"/>
    <addaction name="actionSave_as"/>
+   <addaction name="actionPrint"/>
    <addaction name="separator"/>
    <addaction name="actionCut"/>
    <addaction name="actionCopy"/>
@@ -82,6 +97,12 @@
    <addaction name="separator"/>
    <addaction name="actionRedo"/>
    <addaction name="actionUndo"/>
+   <addaction name="separator"/>
+   <addaction name="actionFont"/>
+   <addaction name="actionColor"/>
+   <addaction name="actionBackground_color"/>
+   <addaction name="separator"/>
+   <addaction name="actionBackground_theme"/>
    <addaction name="separator"/>
    <addaction name="actionAbout_Notepad"/>
   </widget>
@@ -173,6 +194,51 @@
    </property>
    <property name="text">
     <string>About Notepad</string>
+   </property>
+  </action>
+  <action name="actionFont">
+   <property name="icon">
+    <iconset resource="Resource.qrc">
+     <normaloff>:/rec/img/font.png</normaloff>:/rec/img/font.png</iconset>
+   </property>
+   <property name="text">
+    <string>Font</string>
+   </property>
+  </action>
+  <action name="actionColor">
+   <property name="icon">
+    <iconset resource="Resource.qrc">
+     <normaloff>:/rec/img/text-color.png</normaloff>:/rec/img/text-color.png</iconset>
+   </property>
+   <property name="text">
+    <string>Color</string>
+   </property>
+  </action>
+  <action name="actionBackground_color">
+   <property name="icon">
+    <iconset resource="Resource.qrc">
+     <normaloff>:/rec/img/background-color.png</normaloff>:/rec/img/background-color.png</iconset>
+   </property>
+   <property name="text">
+    <string>Background color</string>
+   </property>
+  </action>
+  <action name="actionBackground_theme">
+   <property name="icon">
+    <iconset resource="Resource.qrc">
+     <normaloff>:/rec/img/theme-color.png</normaloff>:/rec/img/theme-color.png</iconset>
+   </property>
+   <property name="text">
+    <string>Background theme</string>
+   </property>
+  </action>
+  <action name="actionPrint">
+   <property name="icon">
+    <iconset resource="Resource.qrc">
+     <normaloff>:/rec/img/print.png</normaloff>:/rec/img/print.png</iconset>
+   </property>
+   <property name="text">
+    <string>Print</string>
    </property>
   </action>
  </widget>
